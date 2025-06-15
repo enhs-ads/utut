@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  background-color: #eaeaeafc;
+  color: rgb(0, 0, 0);
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navbar button {
+  background-color: #2e50e9;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #aaa9a9;
+}
+.button {
+  background-color: #2e50e9;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #aaa9a9;
+}
+
+.profile-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.display-name {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.username {
+  color: gray(0, 0, 0);
+  word-spacing: 5px;
+  
+}
+.join-date{
+        color: rgb(0, 0, 0);
+        word-spacing: 5px;
+        
+
+
+}
+.bio {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border: 1px solid #ccc;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #ff5656;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.small-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.search-container {
+  position: absolute;
+  right: 100px;
+}
+
+.search-container input {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+/* ✅ Responsive fix starts here */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .search-container {
+    order: -1;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    position: static;
+  }
+
+  .navbar a,
+  .navbar button {
+    margin: 2px 4px;
+  }
+}
